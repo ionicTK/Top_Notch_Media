@@ -21,6 +21,8 @@ SET time_zone
 --
 -- Database: `demo`
 --
+CREATE DATABASE IF NOT EXISTS 'newMail' DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE 'newMail';
 
 -- --------------------------------------------------------
 
@@ -41,11 +43,11 @@ IF NOT EXISTS `team_member`
 -- Dumping data for table `team_member`
 --
 
-INSERT INTO `team_member` (`id`,`name`,`role`)
-VALUES
-(1, 'Roland Mendel', 'Manager'),
-(2, 'Victoria Ashworth', 'Director'),
-(3, 'Martin Blank', 'CEO');
+-- INSERT INTO `team_member` (`id`,`name`,`role`)
+-- VALUES
+-- (1, 'Roland Mendel', 'Manager'),
+-- (2, 'Victoria Ashworth', 'Director'),
+-- (3, 'Martin Blank', 'CEO');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

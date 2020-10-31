@@ -35,7 +35,7 @@
                     </div>
                     <?php
                     // Include config file
-                    require_once "../config.php";
+                    require_once "/../config.php";
                     
                     // Attempt select query execution
                     $sql = "SELECT * FROM team_member";
@@ -71,7 +71,7 @@
                             echo "<p class='lead'><em>No records were found.</em></p>";
                         }
                     } else{
-                        echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+                        echo "ERROR: Unable to execute $sql. " . $mysqli->error;
                     }
                     
                     // Close connection
