@@ -35,7 +35,7 @@
                     </div>
                     <?php
                     // Include config file
-                    require_once "/../config.php";
+                    require('/../config.php');
                     
                     // Attempt select query execution
                     $sql = "SELECT * FROM team_member";
