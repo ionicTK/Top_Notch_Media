@@ -25,7 +25,6 @@
     </script>
 </head>
 <body>
-<?php
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -34,7 +33,7 @@
                         <h2 class="pull-left">Team Details</h2>
                         <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
                     </div>
-                    
+                    <?php
                     // Include config file
                     require('/../config.php');
                     
@@ -77,11 +76,10 @@
                     
                     // Close connection
                     $mysqli->close();
-                    
+                    ?>
                 </div>
             </div>        
         </div>
     </div>
-?>
 </body>
 </html>

@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
 // Include config file
 require('/../config.php');
-echo "Hello World";
+
 // Define variables and initialize with empty values
 $name = $role = "";
 $name_err = $role_err = "";
@@ -60,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
  
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Create Record</title>
